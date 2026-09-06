@@ -1,0 +1,39 @@
+name: Build Tailwind CSS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'src/input.css'
+      - 'tailwind.config.js'
+      - 'package.json'
+      - '.github/workflows/build-css.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build CSS
+        run: npm run build
+
+      - name: Commit compiled CSS
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: rebuild compiled Tailwind CSS [skip ci]"
+          file_pattern: "assets/css/style.css"
