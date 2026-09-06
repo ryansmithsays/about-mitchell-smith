@@ -39,21 +39,21 @@
 </head>
 <body class="bg-white text-slate-900 font-sans antialiased selection:bg-lovejoy-red selection:text-white">
 
-  <!-- Top Sticky Navigation with MS Shield Monogram -->
+  <!-- Top Sticky Navigation with Direct Page Links -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3">
+      <a href="index.html" class="flex items-center gap-3">
         <img src="MS_Monogram_Final.png" alt="Mitchell Smith Crest" class="w-9 h-9 object-contain drop-shadow-sm" />
         <div>
           <span class="font-extrabold tracking-tight text-slate-900 text-base block leading-tight">MITCHELL SMITH</span>
           <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Class of 2031 • #77 Hornets / #12 Sting</span>
         </div>
       </a>
-      <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-hornets-navy transition">About</a>
-        <a href="#soccer-hub" class="hover:text-hornets-navy transition">Soccer Archive</a>
-        <a href="#film" class="hover:text-hornets-navy transition">Match Film</a>
-        <a href="#pillars" class="hover:text-hornets-navy transition">Disciplines</a>
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <a href="soccer.html" class="hover:text-hornets-navy transition font-semibold">Soccer</a>
+        <a href="orchestra.html" class="hover:text-hornets-navy transition font-semibold">Orchestra</a>
+        <a href="cross-country.html" class="hover:text-hornets-navy transition font-semibold">Cross Country</a>
+        <a href="academics-football.html" class="hover:text-hornets-navy transition font-semibold">Academics</a>
         <a href="#contact" class="bg-lovejoy-red hover:bg-lovejoy-redHover text-white px-4 py-2 rounded-lg font-bold transition text-xs tracking-wider uppercase shadow-sm">Coach Inquiry</a>
       </div>
     </div>
@@ -88,8 +88,8 @@
           </p>
 
           <div class="flex flex-wrap gap-3.5 justify-center lg:justify-start">
-            <a href="#soccer-hub" class="bg-hornets-navy hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-bold transition shadow-sm flex items-center gap-2">
-              <span>View Soccer Career</span>
+            <a href="soccer.html" class="bg-hornets-navy hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-bold transition shadow-sm flex items-center gap-2">
+              <span>View Soccer Career & Film</span>
               <svg class="w-4 h-4 text-hornets-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
             <a href="#film" class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 px-6 py-3 rounded-xl font-bold transition flex items-center gap-2">
@@ -192,10 +192,16 @@
 
   <!-- Soccer Hub (Season by Season) -->
   <section id="soccer-hub" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mb-8">
-      <span class="text-xs font-mono uppercase tracking-widest text-hornets-green font-bold block">Club Career Archive</span>
-      <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Soccer Seasons & Milestones</h2>
-      <p class="text-slate-500 text-sm mt-1">Select a season to view teams, coaches, achievements, kit numbers, and statistics.</p>
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-widest text-hornets-green font-bold block">Club Career Archive</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Soccer Seasons & Milestones</h2>
+        <p class="text-slate-500 text-sm mt-1">Select a season to view teams, coaches, achievements, kit numbers, and statistics.</p>
+      </div>
+      <a href="soccer.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-hornets-navy hover:text-hornets-green transition bg-slate-100 px-4 py-2 rounded-lg border border-slate-200">
+        <span>Open Dedicated Soccer Page</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
     </div>
 
     <!-- Interactive Season Buttons -->
@@ -397,7 +403,7 @@
     </div>
   </section>
 
-  <!-- Multi-Discipline Section -->
+  <!-- Multi-Discipline Section (Clickable Subpage Cards) -->
   <section id="pillars" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200">
     <div class="text-center max-w-2xl mx-auto mb-14">
       <div class="flex justify-center mb-3">
@@ -405,15 +411,16 @@
       </div>
       <span class="text-xs font-bold font-mono tracking-widest uppercase text-lovejoy-red mb-1 block">Lovejoy ISD • Class of 2031</span>
       <h3 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Academics, Arts & Athletics</h3>
-      <p class="text-slate-600 mt-2 text-sm">Complementary athletic and fine arts tracks reinforcing Mitchell's discipline and work ethic.</p>
+      <p class="text-slate-600 mt-2 text-sm">Click any discipline below to view Mitchell’s dedicated archive.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <!-- Academics -->
-      <div class="bg-white border-2 border-slate-200 hover:border-lovejoy-red transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      
+      <!-- Academics (Links to academics-football.html) -->
+      <a href="academics-football.html" class="group bg-white border-2 border-slate-200 hover:border-lovejoy-red hover:shadow-lg transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
           <div class="w-10 h-10 rounded-lg bg-lovejoy-light text-lovejoy-red flex items-center justify-center text-lg font-bold mb-4">📚</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-1">Academics</h4>
+          <h4 class="text-lg font-bold text-slate-900 group-hover:text-lovejoy-red transition mb-1">Academics</h4>
           <p class="text-xs text-slate-600 mb-4 leading-relaxed">
             Consistent Honor Roll student maintaining high classroom accountability while managing a 90+ match club soccer schedule.
           </p>
@@ -423,14 +430,17 @@
             <li>✔ High classroom accountability</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-100 text-[10px] text-lovejoy-red font-bold uppercase mt-4">Lovejoy Scholar</div>
-      </div>
+        <div class="pt-4 border-t border-slate-100 text-[11px] text-lovejoy-red font-bold uppercase mt-4 flex items-center justify-between">
+          <span>View Academic Profile</span>
+          <span class="group-hover:translate-x-1 transition">→</span>
+        </div>
+      </a>
 
-      <!-- Orchestra -->
-      <div class="bg-white border-2 border-slate-200 hover:border-slate-800 transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <!-- Orchestra (Links to orchestra.html) -->
+      <a href="orchestra.html" class="group bg-white border-2 border-slate-200 hover:border-sky-600 hover:shadow-lg transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-800 flex items-center justify-center text-lg font-bold mb-4">🎻</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-1">Orchestra</h4>
+          <div class="w-10 h-10 rounded-lg bg-sky-50 text-sky-700 flex items-center justify-center text-lg font-bold mb-4">🎻</div>
+          <h4 class="text-lg font-bold text-slate-900 group-hover:text-sky-700 transition mb-1">Orchestra</h4>
           <p class="text-xs text-slate-600 mb-4 leading-relaxed">
             Double Bassist anchoring the lower harmonic foundation in school concert and symphonic ensemble performances.
           </p>
@@ -440,14 +450,17 @@
             <li>✔ Advanced sight-reading skills</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-100 text-[10px] text-slate-800 font-bold uppercase mt-4">Fine Arts</div>
-      </div>
+        <div class="pt-4 border-t border-slate-100 text-[11px] text-sky-700 font-bold uppercase mt-4 flex items-center justify-between">
+          <span>View Music Profile</span>
+          <span class="group-hover:translate-x-1 transition">→</span>
+        </div>
+      </a>
 
-      <!-- Cross Country -->
-      <div class="bg-white border-2 border-slate-200 hover:border-lovejoy-red transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <!-- Cross Country (Links to cross-country.html) -->
+      <a href="cross-country.html" class="group bg-white border-2 border-slate-200 hover:border-lovejoy-red hover:shadow-lg transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
           <div class="w-10 h-10 rounded-lg bg-lovejoy-light text-lovejoy-red flex items-center justify-center text-lg font-bold mb-4">🏃</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-1">Cross Country</h4>
+          <h4 class="text-lg font-bold text-slate-900 group-hover:text-lovejoy-red transition mb-1">Cross Country</h4>
           <p class="text-xs text-slate-600 mb-4 leading-relaxed">
             Distance stamina engine powering high-press intensity through full competitive soccer matches.
           </p>
@@ -457,14 +470,17 @@
             <li>✔ Team-first leadership</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-100 text-[10px] text-lovejoy-red font-bold uppercase mt-4">Lovejoy XC</div>
-      </div>
+        <div class="pt-4 border-t border-slate-100 text-[11px] text-lovejoy-red font-bold uppercase mt-4 flex items-center justify-between">
+          <span>View XC Profile</span>
+          <span class="group-hover:translate-x-1 transition">→</span>
+        </div>
+      </a>
 
-      <!-- Football -->
-      <div class="bg-white border-2 border-slate-200 hover:border-lovejoy-red transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
+      <!-- Football (Links to academics-football.html) -->
+      <a href="academics-football.html" class="group bg-white border-2 border-slate-200 hover:border-lovejoy-red hover:shadow-lg transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
           <div class="w-10 h-10 rounded-lg bg-lovejoy-light text-lovejoy-red flex items-center justify-center text-lg font-bold mb-4">🏈</div>
-          <h4 class="text-lg font-bold text-slate-900 mb-1">Football</h4>
+          <h4 class="text-lg font-bold text-slate-900 group-hover:text-lovejoy-red transition mb-1">Football</h4>
           <p class="text-xs text-slate-600 mb-4 leading-relaxed">
             Dual-sport physical development enhancing lateral agility, change-of-direction, and contact toughness.
           </p>
@@ -474,8 +490,12 @@
             <li>✔ Physical resilience</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-100 text-[10px] text-lovejoy-red font-bold uppercase mt-4">Lovejoy Athletics</div>
-      </div>
+        <div class="pt-4 border-t border-slate-100 text-[11px] text-lovejoy-red font-bold uppercase mt-4 flex items-center justify-between">
+          <span>View Athletics Profile</span>
+          <span class="group-hover:translate-x-1 transition">→</span>
+        </div>
+      </a>
+
     </div>
   </section>
 
