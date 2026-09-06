@@ -11,13 +11,24 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#f0f7ff',
-              100: '#e0effe',
-              500: '#0284c7',
-              600: '#0369a1',
-              700: '#075985',
-              900: '#0c4a6e',
+            hornets: {
+              navy: '#0A2540',
+              green: '#107C41',
+              accent: '#16A34A',
+              light: '#F0FDF4'
+            },
+            sting: {
+              navy: '#0F1E36',
+              blue: '#1D4ED8',
+              volt: '#A3E635',
+              voltDark: '#84CC16',
+              light: '#F7FEE7'
+            },
+            lovejoy: {
+              red: '#BA0C2F',
+              redHover: '#990B26',
+              black: '#111827',
+              light: '#FEF2F2'
             }
           }
         }
@@ -25,398 +36,416 @@
     }
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-lovejoy-red selection:text-white">
 
-  <!-- Sticky Header -->
-  <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80">
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-2.5">
-        <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-600 to-teal-400 text-white font-black flex items-center justify-center text-sm shadow-md shadow-sky-500/20">MS</span>
+        <span class="w-9 h-9 rounded-lg bg-hornets-navy text-white font-black flex items-center justify-center text-sm shadow-sm">MS</span>
         <div>
-          <span class="font-extrabold tracking-tight text-white text-base block leading-tight">MITCHELL SMITH</span>
-          <span class="text-[10px] font-mono text-slate-400 tracking-wider uppercase">Class of 2028 • #12</span>
+          <span class="font-extrabold tracking-tight text-slate-900 text-base block leading-tight">MITCHELL SMITH</span>
+          <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Class of 2028 • #12</span>
         </div>
       </a>
-      <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-sky-400 transition">About</a>
-        <a href="#soccer-hub" class="hover:text-sky-400 transition">Soccer Archive</a>
-        <a href="#film" class="hover:text-sky-400 transition">Match Film</a>
-        <a href="#pillars" class="hover:text-sky-400 transition">Disciplines</a>
-        <a href="#contact" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded-full font-semibold transition text-xs tracking-wide uppercase shadow-lg shadow-sky-600/30">Coach Inquiry</a>
+      <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-hornets-navy transition">About</a>
+        <a href="#soccer-hub" class="hover:text-hornets-navy transition">Soccer Archive</a>
+        <a href="#film" class="hover:text-hornets-navy transition">Match Film</a>
+        <a href="#pillars" class="hover:text-hornets-navy transition">Disciplines</a>
+        <a href="#contact" class="bg-lovejoy-red hover:bg-lovejoy-redHover text-white px-4 py-2 rounded-lg font-bold transition text-xs tracking-wider uppercase shadow-sm">Coach Inquiry</a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative overflow-hidden pt-16 pb-14 lg:pt-24 lg:pb-20 border-b border-slate-900">
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
+  <section class="relative pt-12 pb-14 lg:pt-16 lg:pb-20 border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+        
+        <!-- Bio text -->
         <div class="lg:w-7/12 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Dallas Hornets 14U ('26-'27) • Coach K. White
+          <!-- Club & School Badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-5">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-hornets-light text-hornets-navy border border-hornets-green/30">
+              <span class="w-2 h-2 rounded-full bg-hornets-green animate-pulse"></span>
+              Dallas Hornets 14U ('26-'27)
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-lovejoy-light text-lovejoy-red border border-lovejoy-red/30">
+              Lovejoy Leopards • Class of 2028
+            </span>
           </div>
-          <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-4">
+
+          <h1 class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-4">
             Scholar. Playmaker.<br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-teal-300">Musician.</span>
+            <span class="text-hornets-navy">Musician.</span>
           </h1>
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-            Mitchell’s year-by-year chronicle—capturing discipline in honors academics, vision and finishing on the pitch, endurance on the cross country course, and artistry on the double bass.
+          
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+            Mitchell’s multi-sport and academic chronicle—tracking classroom discipline, playmaking and finishing on the pitch, endurance on the course, and artistry on the double bass.
           </p>
-          <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <a href="#soccer-hub" class="bg-sky-600 hover:bg-sky-500 text-white px-6 py-3 rounded-xl font-bold transition shadow-lg shadow-sky-600/30 flex items-center gap-2">
-              <span>Explore Soccer Career</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+          <div class="flex flex-wrap gap-3.5 justify-center lg:justify-start">
+            <a href="#soccer-hub" class="bg-hornets-navy hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-bold transition shadow-sm flex items-center gap-2">
+              <span>View Soccer Career</span>
+              <svg class="w-4 h-4 text-hornets-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </a>
-            <a href="#contact" class="bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 px-6 py-3 rounded-xl font-semibold transition">
-              Scout Contacts
+            <a href="#contact" class="bg-white hover:bg-slate-50 border border-slate-300 text-slate-700 px-6 py-3 rounded-xl font-bold transition">
+              Scouting & Contact
             </a>
           </div>
         </div>
 
-        <!-- Quick Athlete Card -->
+        <!-- Athlete Dossier Card -->
         <div class="lg:w-5/12 w-full max-w-md">
-          <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl"></div>
-            <div class="flex justify-between items-start mb-6">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xl shadow-slate-100 relative">
+            <div class="flex justify-between items-start mb-5 border-b border-slate-100 pb-4">
               <div>
-                <span class="text-xs font-mono uppercase text-sky-400 font-bold tracking-widest">Athlete Dossier</span>
-                <h3 class="text-2xl font-black text-white">Mitchell Smith</h3>
-                <p class="text-xs text-slate-400">Allen, TX • Class of 2028 (2013B)</p>
+                <span class="text-[11px] font-mono uppercase text-slate-400 font-bold tracking-widest block">Athlete Profile</span>
+                <h3 class="text-2xl font-black text-slate-900">Mitchell Smith</h3>
+                <p class="text-xs text-slate-500">Lucas / Allen, TX • Class of 2028</p>
               </div>
-              <span class="px-3 py-1 bg-slate-800 border border-slate-700 text-sky-400 text-xs font-bold rounded-lg">#12</span>
+              <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-bold rounded-lg border border-slate-200">#12</span>
             </div>
             
-            <div class="grid grid-cols-2 gap-3 mb-6">
-              <div class="bg-slate-950/70 p-3 rounded-xl border border-slate-800/80">
+            <div class="grid grid-cols-2 gap-3 mb-5">
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
                 <div class="text-[10px] text-slate-400 uppercase font-semibold">Primary Positions</div>
-                <div class="text-sm font-bold text-white">Center Attacking Mid / Forward</div>
+                <div class="text-sm font-bold text-slate-900">Attacking Mid / Forward</div>
               </div>
-              <div class="bg-slate-950/70 p-3 rounded-xl border border-slate-800/80">
-                <div class="text-[10px] text-slate-400 uppercase font-semibold">Height / Status</div>
-                <div class="text-sm font-bold text-white">5'10" • Playing Up (2012B/14U)</div>
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="text-[10px] text-slate-400 uppercase font-semibold">Height / Build</div>
+                <div class="text-sm font-bold text-slate-900">5'10" • Athletic</div>
               </div>
-              <div class="bg-slate-950/70 p-3 rounded-xl border border-slate-800/80">
-                <div class="text-[10px] text-slate-400 uppercase font-semibold">Current Squad</div>
-                <div class="text-sm font-bold text-white">Dallas Hornets 14U</div>
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="text-[10px] text-slate-400 uppercase font-semibold">Club Soccer</div>
+                <div class="text-sm font-bold text-hornets-navy">Dallas Hornets 14U</div>
               </div>
-              <div class="bg-slate-950/70 p-3 rounded-xl border border-slate-800/80">
-                <div class="text-[10px] text-slate-400 uppercase font-semibold">Instrument</div>
-                <div class="text-sm font-bold text-white">Double Bass (Orchestra)</div>
+              <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                <div class="text-[10px] text-slate-400 uppercase font-semibold">School Athletics</div>
+                <div class="text-sm font-bold text-lovejoy-red">Lovejoy Leopards</div>
               </div>
             </div>
 
-            <div class="border-t border-slate-800 pt-4 flex items-center justify-between text-xs text-slate-400">
-              <span class="text-amber-400 font-medium">XC Team Captain</span>
-              <span class="text-emerald-400 font-medium">All-A Honor Roll</span>
+            <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs">
+              <span class="text-slate-600 font-medium">XC Team Captain</span>
+              <span class="text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">All-A Honor Roll</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Verified Soccer Production Bar -->
-  <section class="bg-slate-900 border-y border-slate-800 py-10">
+  <!-- Production / Stats Banner -->
+  <section class="bg-slate-900 text-white py-8">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-2">
-        <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-bold">2025–2026 Sting SC Campaign Statistics (Playing Up)</span>
-        <span class="text-xs text-slate-400 bg-slate-800 px-2.5 py-1 rounded-md border border-slate-700">Coach: Matt Pitcock</span>
+      <div class="flex flex-col sm:flex-row justify-between items-center mb-5 gap-2">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-widest text-sting-volt font-bold block">Verified Campaign Production</span>
+          <span class="text-xs text-slate-400">Sting SC 2012B / 2013B Playing Up • Coach Matt Pitcock</span>
+        </div>
+        <span class="text-xs text-slate-300 bg-slate-800 px-2.5 py-1 rounded border border-slate-700">90 Games Logged</span>
       </div>
+      
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-        <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
-          <div class="text-3xl sm:text-5xl font-black text-white mb-1 tracking-tight">90</div>
-          <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Appearances</div>
+        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+          <div class="text-3xl sm:text-4xl font-black text-white mb-1">90</div>
+          <div class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Appearances</div>
         </div>
-        <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
-          <div class="text-3xl sm:text-5xl font-black text-sky-400 mb-1 tracking-tight">111</div>
-          <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Goals Scored</div>
+        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+          <div class="text-3xl sm:text-4xl font-black text-sting-volt mb-1">111</div>
+          <div class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Goals Scored</div>
         </div>
-        <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
-          <div class="text-3xl sm:text-5xl font-black text-teal-300 mb-1 tracking-tight">56</div>
-          <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Assists Delivered</div>
+        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+          <div class="text-3xl sm:text-4xl font-black text-sky-400 mb-1">56</div>
+          <div class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Assists Delivered</div>
         </div>
-        <div class="p-4 bg-slate-950/60 rounded-xl border border-slate-800">
-          <div class="text-3xl sm:text-5xl font-black text-white mb-1 tracking-tight">1.86</div>
-          <div class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Goal Contrib / Match</div>
+        <div class="p-4 bg-slate-800/80 rounded-xl border border-slate-700">
+          <div class="text-3xl sm:text-4xl font-black text-white mb-1">1.86</div>
+          <div class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Goal Contrib / Match</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Complete Soccer Career Chronicle (Replaces Dozens of Fragmented Pages) -->
+  <!-- Soccer Hub (Season by Season) -->
   <section id="soccer-hub" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="mb-10 text-center sm:text-left">
-      <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-bold">Club Soccer Career Archive</span>
-      <h2 class="text-3xl font-extrabold text-white mt-1">Year-by-Year Progression</h2>
-      <p class="text-slate-400 text-sm mt-2 max-w-2xl">Browse Mitchell's complete team tenures, leagues, tournament championships, and key milestones.</p>
+    <div class="mb-8">
+      <span class="text-xs font-mono uppercase tracking-widest text-hornets-green font-bold block">Club Career Archive</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Soccer Seasons & Milestones</h2>
+      <p class="text-slate-500 text-sm mt-1">Select a season to view teams, coaches, achievements, and statistics.</p>
     </div>
 
-    <!-- Season Selector Tabs -->
-    <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4 mb-8" id="season-tabs">
-      <button onclick="switchSeason('2026-27')" id="tab-2026-27" class="season-tab active px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-sky-600 text-white">
+    <!-- Interactive Season Buttons -->
+    <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-4 mb-8">
+      <button onclick="switchSeason('2026-27')" id="tab-2026-27" class="season-tab active px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-hornets-navy text-white shadow-sm flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-hornets-accent"></span>
         2026–2027: Dallas Hornets 14U
       </button>
-      <button onclick="switchSeason('2025-26')" id="tab-2025-26" class="season-tab px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-slate-900 border border-slate-800 text-slate-300 hover:text-white">
+      <button onclick="switchSeason('2025-26')" id="tab-2025-26" class="season-tab px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-sting-voltDark"></span>
         2025–2026: Sting SC (111 Goals)
       </button>
-      <button onclick="switchSeason('2024-25')" id="tab-2024-25" class="season-tab px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-slate-900 border border-slate-800 text-slate-300 hover:text-white">
+      <button onclick="switchSeason('2024-25')" id="tab-2024-25" class="season-tab px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center gap-2">
         2024–2025: Sting SC (90+ Matches)
       </button>
-      <button onclick="switchSeason('2023-24')" id="tab-2023-24" class="season-tab px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-slate-900 border border-slate-800 text-slate-300 hover:text-white">
+      <button onclick="switchSeason('2023-24')" id="tab-2023-24" class="season-tab px-4 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center gap-2">
         2023–2024: Tigres FC Allen
       </button>
     </div>
 
-    <!-- Season Content: 2026-2027 -->
+    <!-- Season 1: Dallas Hornets (Colors: Deep Navy & Green) -->
     <div id="content-2026-27" class="season-content block">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 lg:p-8">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+      <div class="bg-slate-50 border-2 border-hornets-navy/15 rounded-2xl p-6 lg:p-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5 mb-5">
           <div>
-            <span class="inline-block px-3 py-1 bg-sky-500/10 text-sky-400 border border-sky-500/20 text-xs font-bold rounded-md mb-2">Upcoming Campaign</span>
-            <h3 class="text-2xl font-bold text-white">Dallas Hornets 14U</h3>
-            <p class="text-slate-400 text-sm">Head Coach: K. White • Position: Forward / Attacking Midfield</p>
+            <span class="inline-block px-3 py-1 bg-hornets-green/10 text-hornets-green border border-hornets-green/30 text-xs font-bold rounded-md mb-2">Current Club Assignment</span>
+            <h3 class="text-2xl font-black text-hornets-navy">Dallas Hornets 14U</h3>
+            <p class="text-slate-600 text-sm">Head Coach: K. White • Attacking Midfield / Forward</p>
           </div>
-          <div class="bg-slate-950 px-4 py-3 rounded-xl border border-slate-800 text-right">
-            <span class="text-xs text-slate-400 uppercase tracking-wider">Status</span>
-            <div class="text-sm font-bold text-emerald-400">Signed for 2026–2027</div>
+          <div class="bg-white px-4 py-2 rounded-xl border border-slate-200 text-right">
+            <span class="text-[11px] text-slate-400 uppercase font-semibold block">Status</span>
+            <span class="text-sm font-bold text-hornets-green">Signed for 2026–2027</span>
           </div>
         </div>
-        <p class="text-slate-300 text-sm leading-relaxed mb-6">
-          Transitioning to the Dallas Hornets 14U squad for the 2026–2027 season, competing at top-tier regional competition with an emphasis on elite playmaking, tactical pressing, and dynamic transition finishing.
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          Joining the Dallas Hornets 14U roster for the 2026–2027 competitive campaign under Coach K. White, bringing dynamic ball control, pace, and finishing ability to top-flight regional play.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
-            <span class="text-slate-400 block mb-1">Squad Assignment</span>
-            <span class="font-bold text-white text-sm">14U Primary Roster</span>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <span class="text-slate-400 block mb-1">Roster Tier</span>
+            <span class="font-bold text-slate-800 text-sm">14U Primary Roster</span>
           </div>
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
-            <span class="text-slate-400 block mb-1">Primary Role</span>
-            <span class="font-bold text-white text-sm">Attacking Midfield / Forward</span>
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <span class="text-slate-400 block mb-1">Tactical Focus</span>
+            <span class="font-bold text-slate-800 text-sm">High-Press Transition & Finishing</span>
           </div>
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80">
-            <span class="text-slate-400 block mb-1">Match Film</span>
-            <span class="font-bold text-sky-400 text-sm">Uploading Fall 2026</span>
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <span class="text-slate-400 block mb-1">Film Status</span>
+            <span class="font-bold text-hornets-green text-sm">Uploading Fall 2026</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Season Content: 2025-2026 -->
+    <!-- Season 2: Sting SC (Colors: Navy & Volt Yellow-Green) -->
     <div id="content-2025-26" class="season-content hidden">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 lg:p-8">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+      <div class="bg-sting-navy text-white rounded-2xl p-6 lg:p-8 shadow-lg">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700 pb-5 mb-5">
           <div>
-            <span class="inline-block px-3 py-1 bg-teal-500/10 text-teal-300 border border-teal-500/20 text-xs font-bold rounded-md mb-2">Breakout Campaign</span>
-            <h3 class="text-2xl font-bold text-white">Sting Soccer Club (2012B & 2013B)</h3>
-            <p class="text-slate-400 text-sm">Head Coach: Matt Pitcock • ECNL RL NTX & NPL</p>
+            <span class="inline-block px-3 py-1 bg-sting-volt/20 text-sting-volt border border-sting-volt/40 text-xs font-bold rounded-md mb-2">Historic Campaign</span>
+            <h3 class="text-2xl font-black text-white">Sting Soccer Club (2012B & 2013B)</h3>
+            <p class="text-slate-300 text-sm">Head Coach: Matt Pitcock • ECNL RL NTX & NPL</p>
           </div>
           <div class="text-right">
-            <span class="text-2xl font-black text-sky-400">167</span>
+            <span class="text-2xl font-black text-sting-volt">167</span>
             <span class="text-xs text-slate-400 block uppercase">Total Contributions</span>
           </div>
         </div>
 
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-4">Major Tournament Outcomes & Milestones</h4>
-        <div class="space-y-3">
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Key Tournament Championships & Results</h4>
+        <div class="space-y-2.5">
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <div>
-              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wide">🏆 Tournament Champion</span>
-              <h5 class="text-sm font-bold text-white">U90C Dallas Open (Sting 2012B)</h5>
-              <p class="text-xs text-slate-400">Scored in 4:1 win vs Solar SC 12B Tremblay • Won 1:0 vs Evolution 12B Goldie in Finals</p>
+              <span class="text-xs font-bold text-sting-volt uppercase">🏆 Champion</span>
+              <h5 class="text-sm font-bold text-white">U90C Dallas Open (Sting 2012B - Playing Up)</h5>
+              <p class="text-xs text-slate-300">Goal in 4:1 win vs Solar SC 12B Tremblay • Won 1:0 vs Evolution 12B Goldie in Finals</p>
             </div>
-            <span class="text-xs font-mono bg-slate-900 px-3 py-1 rounded border border-slate-800 text-slate-300 self-start sm:self-center">1 Goal, 0 Assists</span>
+            <span class="text-xs font-mono bg-slate-800 px-3 py-1 rounded text-slate-200 border border-slate-700 self-start sm:self-center">1 Goal, 0 Assists</span>
           </div>
 
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <div>
-              <span class="text-xs font-bold text-sky-400 uppercase tracking-wide">⭐ Century Milestone</span>
+              <span class="text-xs font-bold text-sky-400 uppercase">⭐ Milestone Match</span>
               <h5 class="text-sm font-bold text-white">Next Generation Cup (Sting 2013B)</h5>
-              <p class="text-xs text-slate-400">Recorded 100th career goal and 50th career assist vs WTX Rios 2013 Gold (4:2 W)</p>
+              <p class="text-xs text-slate-300">Hit 100th career goal and 50th career assist vs WTX Rios 2013 Gold (4:2 W)</p>
             </div>
-            <span class="text-xs font-mono bg-slate-900 px-3 py-1 rounded border border-slate-800 text-slate-300 self-start sm:self-center">4 Goals, 2 Assists</span>
+            <span class="text-xs font-mono bg-slate-800 px-3 py-1 rounded text-slate-200 border border-slate-700 self-start sm:self-center">4 Goals, 2 Assists</span>
           </div>
 
-          <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+          <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 flex flex-col sm:flex-row justify-between sm:items-center gap-2">
             <div>
-              <span class="text-xs font-bold text-slate-400 uppercase tracking-wide">Showcase</span>
+              <span class="text-xs font-bold text-slate-400 uppercase">Showcase</span>
               <h5 class="text-sm font-bold text-white">Tiger Tournament Dallas Spring Showcase</h5>
-              <p class="text-xs text-slate-400">1G 2A vs Avanti Soccer Academy ERCL (4:3 W) • 2 Goals vs Texas Spurs FC 13B (3:1 W)</p>
+              <p class="text-xs text-slate-300">1G 2A vs Avanti Soccer Academy ERCL (4:3 W) • 2 Goals vs Texas Spurs FC 13B (3:1 W)</p>
             </div>
-            <span class="text-xs font-mono bg-slate-900 px-3 py-1 rounded border border-slate-800 text-slate-300 self-start sm:self-center">3 Goals, 2 Assists</span>
+            <span class="text-xs font-mono bg-slate-800 px-3 py-1 rounded text-slate-200 border border-slate-700 self-start sm:self-center">3 Goals, 2 Assists</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Season Content: 2024-2025 -->
+    <!-- Season 3: Sting SC (2024-2025) -->
     <div id="content-2024-25" class="season-content hidden">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 lg:p-8">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6 mb-6">
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 lg:p-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5 mb-5">
           <div>
-            <h3 class="text-2xl font-bold text-white">Sting Soccer Club (Four Squads)</h3>
-            <p class="text-slate-400 text-sm">Head Coach: Matt Pitcock • Standing 5'6" • Playing Up an Age Group</p>
+            <h3 class="text-2xl font-black text-slate-900">Sting Soccer Club (Four Squads)</h3>
+            <p class="text-slate-600 text-sm">Head Coach: Matt Pitcock • Standing 5'6" • Competing Up an Age Bracket</p>
           </div>
-          <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-mono rounded-lg self-start md:self-auto">90+ Total Matches</span>
+          <span class="px-3 py-1 bg-white text-slate-700 border border-slate-200 text-xs font-bold rounded-lg self-start md:self-auto">90+ Total Matches</span>
         </div>
-        <p class="text-slate-300 text-sm leading-relaxed mb-6">
-          Competed across four distinct club rosters (2011B RPL, 2012B EA, 2013B Pre-ECNL, 2013B RPL), commanding the center of the pitch from attacking midfield and striker positions against older competition.
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          Competed across four squads simultaneously (2011B RPL, 2012B EA, 2013B Pre-ECNL, 2013B RPL), anchoring attacking positions against older opponents.
         </p>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
-          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800"><span class="font-bold text-white block">2011B RPL</span>Playing up 2 age groups</div>
-          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800"><span class="font-bold text-white block">2012B EA</span>Elite Academy League</div>
-          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800"><span class="font-bold text-white block">2013B Pre-ECNL</span>Premier development</div>
-          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800"><span class="font-bold text-white block">2013B RPL</span>Regional Premier League</div>
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200"><span class="font-bold text-slate-900 block mb-1">2011B RPL</span>Played up 2 age groups</div>
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200"><span class="font-bold text-slate-900 block mb-1">2012B EA</span>Elite Academy League</div>
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200"><span class="font-bold text-slate-900 block mb-1">2013B Pre-ECNL</span>Premier development</div>
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200"><span class="font-bold text-slate-900 block mb-1">2013B RPL</span>Regional Premier League</div>
         </div>
       </div>
     </div>
 
-    <!-- Season Content: 2023-2024 -->
+    <!-- Season 4: Tigres FC -->
     <div id="content-2023-24" class="season-content hidden">
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 lg:p-8">
-        <h3 class="text-2xl font-bold text-white mb-2">Tigres FC Allen</h3>
-        <p class="text-slate-400 text-sm mb-4">Foundational club development in North Texas soccer.</p>
-        <p class="text-slate-300 text-sm leading-relaxed">
-          Established tactical ball retention, spatial awareness, and quick-decision give-and-go play style that paved the way for entrance into Elite Academy and ECNL-RL platforms.
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 lg:p-8">
+        <h3 class="text-2xl font-black text-slate-900 mb-2">Tigres FC Allen</h3>
+        <p class="text-slate-500 text-sm mb-4">Grassroots club foundation in North Texas competitive soccer.</p>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Developed foundational technical passing, field awareness, and two-touch combination play that prepared Mitchell for entry into regional academy circuits.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Video Reel Showcase -->
-  <section id="film" class="py-16 bg-slate-900/40 border-t border-slate-800">
+  <section id="film" class="py-14 bg-slate-50 border-t border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div>
-          <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-bold">Film Room</span>
-          <h3 class="text-2xl font-bold text-white">Match Film & Highlight Tape</h3>
+          <span class="text-xs font-mono uppercase tracking-widest text-lovejoy-red font-bold block">Scout Film Room</span>
+          <h3 class="text-2xl font-bold text-slate-900">Match Tape & Highlights</h3>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700 w-fit">Updated Regularly</span>
+        <span class="text-xs text-slate-600 bg-white px-3 py-1.5 rounded-lg border border-slate-200 w-fit">Updated Regularly</span>
       </div>
 
-      <div class="aspect-video bg-slate-900 rounded-2xl border border-slate-800 shadow-2xl relative overflow-hidden flex flex-col items-center justify-center p-6 text-center group">
-        <div class="w-20 h-20 rounded-full bg-sky-600/20 group-hover:bg-sky-600/30 text-sky-400 flex items-center justify-center mb-4 transition duration-300 cursor-pointer shadow-lg shadow-sky-600/10">
-          <svg class="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <div class="aspect-video bg-white rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden flex flex-col items-center justify-center p-6 text-center group">
+        <div class="w-16 h-16 rounded-full bg-lovejoy-light text-lovejoy-red group-hover:scale-105 flex items-center justify-center mb-3 transition shadow-sm cursor-pointer">
+          <svg class="w-8 h-8 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         </div>
-        <h4 class="text-lg font-bold text-white mb-2">Spring 2026 Showcase Tape</h4>
-        <p class="text-sm text-slate-400 max-w-md">
-          Includes goals against Solar SC, Texas Spurs FC, and Next Generation Cup tournament film.
+        <h4 class="text-lg font-bold text-slate-900 mb-1">Spring 2026 Showcase Reel</h4>
+        <p class="text-sm text-slate-500 max-w-md">
+          Includes goals against Solar SC, Texas Spurs FC, and Next Generation Cup match footage.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Multi-Discipline Pillars (Academics, Orchestra, XC, Football) -->
-  <section id="pillars" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <span class="text-xs font-bold font-mono tracking-widest uppercase text-sky-400 mb-2 block">Scholar • Playmaker • Musician</span>
-      <h3 class="text-3xl font-extrabold text-white sm:text-4xl">All Other Disciplines</h3>
-      <p class="text-slate-400 mt-4 text-base">Mitchell’s academic rigor and complementary athletic tracks.</p>
+  <!-- Multi-Discipline Section (Lovejoy Leopards Red & Black Theme) -->
+  <section id="pillars" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-bold font-mono tracking-widest uppercase text-lovejoy-red mb-1 block">Lovejoy ISD • Scholar • Playmaker • Musician</span>
+      <h3 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Academics, Arts & Athletics</h3>
+      <p class="text-slate-600 mt-2 text-sm">Complementary athletic and fine arts tracks reinforcing Mitchell's work ethic.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- Academics -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Academics (Lovejoy Colors) -->
+      <div class="bg-white border-2 border-slate-200 hover:border-lovejoy-red transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg font-bold mb-4">📚</div>
-          <h4 class="text-lg font-bold text-white mb-2">Academics</h4>
-          <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-            Consistent Honor Roll student tracking rigorous coursework from 6th grade into high school.
+          <div class="w-10 h-10 rounded-lg bg-lovejoy-light text-lovejoy-red flex items-center justify-center text-lg font-bold mb-4">📚</div>
+          <h4 class="text-lg font-bold text-slate-900 mb-1">Academics</h4>
+          <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+            Consistent Honor Roll student maintaining high classroom accountability while managing a 90+ match club schedule.
           </p>
-          <ul class="text-[11px] text-slate-400 space-y-2">
-            <li>✔ Honor Roll Scholar</li>
-            <li>✔ Balanced 90+ club games/year</li>
+          <ul class="text-[11px] text-slate-500 space-y-1.5">
+            <li>✔ All-A Honor Roll Scholar</li>
+            <li>✔ Lovejoy ISD Student-Athlete</li>
             <li>✔ High classroom accountability</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-800 text-[10px] text-sky-400 font-semibold uppercase mt-4">Scholar</div>
+        <div class="pt-4 border-t border-slate-100 text-[10px] text-lovejoy-red font-bold uppercase mt-4">Lovejoy Scholar</div>
       </div>
 
       <!-- Orchestra -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+      <div class="bg-white border-2 border-slate-200 hover:border-slate-800 transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center text-lg font-bold mb-4">🎻</div>
-          <h4 class="text-lg font-bold text-white mb-2">Orchestra</h4>
-          <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-            Resonant Double Bass musician anchoring the symphonic section in school concert performances.
+          <div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-800 flex items-center justify-center text-lg font-bold mb-4">🎻</div>
+          <h4 class="text-lg font-bold text-slate-900 mb-1">Orchestra</h4>
+          <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+            Double Bassist anchoring the lower harmonic foundation in school concert and symphonic ensemble performances.
           </p>
-          <ul class="text-[11px] text-slate-400 space-y-2">
-            <li>✔ Double Bass Musician</li>
-            <li>✔ Symphonic & Concert Band</li>
-            <li>✔ Advanced sight-reading</li>
+          <ul class="text-[11px] text-slate-500 space-y-1.5">
+            <li>✔ Double Bass Instrumentalist</li>
+            <li>✔ Concert & Symphonic Band</li>
+            <li>✔ Advanced sight-reading skills</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-800 text-[10px] text-teal-400 font-semibold uppercase mt-4">Musician</div>
+        <div class="pt-4 border-t border-slate-100 text-[10px] text-slate-800 font-bold uppercase mt-4">Fine Arts</div>
       </div>
 
-      <!-- Cross Country -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+      <!-- Cross Country (Lovejoy Colors) -->
+      <div class="bg-white border-2 border-slate-200 hover:border-lovejoy-red transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg font-bold mb-4">🏃</div>
-          <h4 class="text-lg font-bold text-white mb-2">Cross Country</h4>
-          <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-            Endurance foundation providing the stamina to press and sprint through 80+ minute soccer matches.
+          <div class="w-10 h-10 rounded-lg bg-lovejoy-light text-lovejoy-red flex items-center justify-center text-lg font-bold mb-4">🏃</div>
+          <h4 class="text-lg font-bold text-slate-900 mb-1">Cross Country</h4>
+          <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+            Distance stamina engine powering high-press intensity through 80+ minutes of competitive soccer.
           </p>
-          <ul class="text-[11px] text-slate-400 space-y-2">
+          <ul class="text-[11px] text-slate-500 space-y-1.5">
             <li>✔ 7th Grade Team Captain</li>
-            <li>✔ Distance pacing & race craft</li>
+            <li>✔ Pace control & distance engine</li>
             <li>✔ Team-first leadership</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-800 text-[10px] text-amber-400 font-semibold uppercase mt-4">Endurance</div>
+        <div class="pt-4 border-t border-slate-100 text-[10px] text-lovejoy-red font-bold uppercase mt-4">Lovejoy XC</div>
       </div>
 
-      <!-- Football -->
-      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between">
+      <!-- Football (Lovejoy Colors) -->
+      <div class="bg-white border-2 border-slate-200 hover:border-lovejoy-red transition rounded-2xl p-6 flex flex-col justify-between shadow-sm">
         <div>
-          <div class="w-10 h-10 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center text-lg font-bold mb-4">🏈</div>
-          <h4 class="text-lg font-bold text-white mb-2">Football</h4>
-          <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-            Multi-sport athletic foundation reinforcing physical toughness, rapid acceleration, and field vision.
+          <div class="w-10 h-10 rounded-lg bg-lovejoy-light text-lovejoy-red flex items-center justify-center text-lg font-bold mb-4">🏈</div>
+          <h4 class="text-lg font-bold text-slate-900 mb-1">Football</h4>
+          <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+            Dual-sport physical development enhancing lateral agility, change-of-direction, and contact toughness.
           </p>
-          <ul class="text-[11px] text-slate-400 space-y-2">
+          <ul class="text-[11px] text-slate-500 space-y-1.5">
             <li>✔ Acceleration & lateral agility</li>
-            <li>✔ Physical contact resilience</li>
-            <li>✔ Team execution</li>
+            <li>✔ Field awareness & vision</li>
+            <li>✔ Physical resilience</li>
           </ul>
         </div>
-        <div class="pt-4 border-t border-slate-800 text-[10px] text-rose-400 font-semibold uppercase mt-4">Multi-Sport</div>
+        <div class="pt-4 border-t border-slate-100 text-[10px] text-lovejoy-red font-bold uppercase mt-4">Lovejoy Athletics</div>
       </div>
     </div>
   </section>
 
   <!-- Coach Contact Footer -->
-  <footer id="contact" class="bg-slate-950 border-t border-slate-800 py-16">
+  <footer id="contact" class="bg-slate-900 text-white border-t border-slate-800 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h3 class="text-3xl font-bold text-white mb-3">Scouting & Staff Inquiries</h3>
+      <h3 class="text-3xl font-black text-white mb-3">Scouting & Coaching Inquiries</h3>
       <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8">
-        For club coach verification, full game match footage links, academic transcripts, or upcoming tournament schedules:
+        For coach verification, full game match links, tournament schedules, or academic transcripts:
       </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="mailto:ryan@theryantsmith.com" class="inline-flex items-center justify-center gap-2 bg-sky-600 hover:bg-sky-500 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-sky-600/25 transition">
+      <div class="flex justify-center">
+        <a href="mailto:ryan@theryantsmith.com" class="inline-flex items-center justify-center gap-2 bg-lovejoy-red hover:bg-lovejoy-redHover text-white font-bold px-8 py-3.5 rounded-xl shadow-md transition">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          Contact Family & Staff
+          Contact Mitchell's Family & Staff
         </a>
       </div>
-      <div class="mt-12 pt-8 border-t border-slate-900 text-xs text-slate-600 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="mt-12 pt-8 border-t border-slate-800 text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-3">
         <div>© 2026 Mitchell Smith Athletic Profile. All rights reserved.</div>
         <div class="space-x-4">
           <span>Dallas Hornets U14</span>
           <span>•</span>
-          <span>Allen, TX</span>
+          <span>Lovejoy Leopards</span>
+          <span>•</span>
+          <span>Lucas / Allen, TX</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Simple Tab Script -->
+  <!-- Script for Season Switcher -->
   <script>
     function switchSeason(seasonId) {
       document.querySelectorAll('.season-content').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.season-tab').forEach(el => {
-        el.classList.remove('bg-sky-600', 'text-white');
-        el.classList.add('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300');
+        el.classList.remove('bg-hornets-navy', 'text-white', 'shadow-sm');
+        el.classList.add('bg-white', 'border', 'border-slate-300', 'text-slate-700');
       });
 
       const activeContent = document.getElementById('content-' + seasonId);
@@ -424,8 +453,8 @@
 
       const activeTab = document.getElementById('tab-' + seasonId);
       if (activeTab) {
-        activeTab.classList.add('bg-sky-600', 'text-white');
-        activeTab.classList.remove('bg-slate-900', 'border-slate-800', 'text-slate-300');
+        activeTab.classList.add('bg-hornets-navy', 'text-white', 'shadow-sm');
+        activeTab.classList.remove('bg-white', 'border-slate-300', 'text-slate-700');
       }
     }
   </script>
